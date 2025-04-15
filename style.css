@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: url("https://static-bestcolleges.tosshub.com/2025/News/blO400SpzjDj97nsx4lrAFZrpdMvA3q7hRaguimq.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: dark overlay for better text readability */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent form */
+    backdrop-filter: blur(10px);         /* Blurs the background image behind form */
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #eee;
+  }
+
+  /* Make the dropdown arrow also white (if browser supports it) */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Optional: Add a custom arrow */
+  select {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592c.86 0 1.319 1.013.753 1.658l-4.796 5.482a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7em center;
+    background-size: 1em;
+  }
+  
+  /* Make options inside select dropdown visible with dark background */
+  select option {
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #fff;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
